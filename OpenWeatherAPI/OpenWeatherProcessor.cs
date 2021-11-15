@@ -92,6 +92,11 @@ namespace OpenWeatherAPI
                 throw new ArgumentException("ApiKey est null ou empty");
             }
 
+            if (ApiHelper.ApiClient == null)
+            {
+                throw new ArgumentException("ApiHelper non initialisé");
+            }
+
             /// Src : https://stackoverflow.com/a/14517976/503842
             var uriBuilder = new UriBuilder($"{BaseURL}{EndPoint}");
 
