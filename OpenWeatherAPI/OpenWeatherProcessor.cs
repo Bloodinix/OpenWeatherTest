@@ -82,6 +82,11 @@ namespace OpenWeatherAPI
         {
             EndPoint = $"/weather?";
 
+            if (ApiKey == null || ApiKey == "")
+            {
+                throw new ArgumentException("ApiKey est null ou empty");
+            }
+
             /// Src : https://stackoverflow.com/a/14517976/503842
             var uriBuilder = new UriBuilder($"{BaseURL}{EndPoint}");
 
