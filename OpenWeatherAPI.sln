@@ -13,6 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeatherAPITests", "Open
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{FDC1F4B2-A121-4881-B6B3-CDD3DCDFABF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{197FBF9B-A666-4ADD-921D-DC6FA337CCA5} = {197FBF9B-A666-4ADD-921D-DC6FA337CCA5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
